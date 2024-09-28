@@ -38,9 +38,8 @@ export const Navbar = () => {
                 "data-[active=true]:text-primary data-[active=true]:font-medium"
               )}
               color="foreground"
-              href="satvickpathak@gmail.com"
+              href="mailto:satvickpathak@gmail.com"
               target="_blank"
-              type="email"
             >
               satvickpathak@gmail.com
             </NextLink>
@@ -49,14 +48,14 @@ export const Navbar = () => {
       </NavbarContent>
 
       <NavbarContent className="flex basis-1/5 sm:basis-full" justify="center">
-        {/* <NavbarItem className="hidden lg:flex">{searchInput}</NavbarItem> */}
         <Socials classes={"hidden sm:flex gap-2"} />
         <NavbarItem className="flex">
           <Button
             isExternal
             as={Link}
             className="text-sm font-normal text-default-600 bg-default-100"
-            href={siteConfig.links.sponsor}
+            download
+            href="/satvick-pathak-resume.pdf"
             variant="flat"
           >
             Resume Download
