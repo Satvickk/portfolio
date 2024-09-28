@@ -68,7 +68,11 @@ export const Navbar = () => {
   );
 };
 
-export const Socials = ({ classes }: string) => {
+interface SocialsProps {
+  classes: string;
+}
+
+export const Socials: React.FC<SocialsProps> = ({ classes }) => {
   return (
     <NavbarItem className={`${classes}`}>
       <Link isExternal aria-label="Twitter" href={siteConfig.links.twitter}>
