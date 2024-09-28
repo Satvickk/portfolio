@@ -68,7 +68,7 @@ export const Navbar = () => {
   );
 };
 
-export const Socials = ({ classes }) => {
+export const Socials = ({ classes }: string) => {
   return (
     <NavbarItem className={`${classes}`}>
       <Link isExternal aria-label="Twitter" href={siteConfig.links.twitter}>
